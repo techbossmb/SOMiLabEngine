@@ -26,7 +26,7 @@ namespace CVE_ExperimentEngine
         void t_Elapsed(Object source, ElapsedEventArgs args)
         {
             t.Stop();
-            Console.WriteLine("\tnow stopping actuator");
+            Notification.writeMessage("\tnow stopping actuator");
             lv.callDll(3, 200);
             Notification.writeMessage("Finished running Experiment: "+ expID);// + experiment.experimentID);
         }
